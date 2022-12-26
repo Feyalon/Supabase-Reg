@@ -1,0 +1,42 @@
+.container{
+    text-align: center;
+}
+
+*{
+    color: white;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.close-profile{
+
+    background-color: black;
+    border: 1px solid gray;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    transition: 500ms linear ;
+}
+
+.close-profile:hover{
+    border: 1px solid red;
+    color: red;
+}
+.open-profile{
+
+    background-color: black;
+    border: 1px solid gray;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    transition: 500ms linear;
+}
+
+.open-profile:hover{
+    border: 1px solid cadetblue;
+    color: cadetblue;
+}

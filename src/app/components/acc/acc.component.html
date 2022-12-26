@@ -1,0 +1,38 @@
+
+<form [formGroup]="updateProfileForm" (ngSubmit)="updateProfile()" class="form-widget">
+    <div>
+      <h1>
+          Profile
+      </h1>
+    </div>
+    <div [formGroup]="updateProfileForm" (ngSubmit)="updateProfile()" class="profilephoto">
+      <app-avatarup [avatarUrl]="this.avatarUrl" (upload)="updateAvatar($event)"> </app-avatarup>
+      <!-- input fields -->
+    </div>
+    
+    <div>
+        <p>Email</p>
+        <input id="email" type="text" [value]="session.user.email" disabled />
+    </div>
+    <div>
+        <p>Username</p>
+        <input formControlName="username" id="username" type="text" />
+    </div>
+    <div>
+        <p>
+            Description
+        </p>
+      <textarea formControlName="website" id="website" type="url"> </textarea>
+    </div>
+  
+    <div>
+      <button type="submit" class="button primary block" [disabled]="loading">
+        {{ loading ? 'Loading ...' : 'Update' }}
+      </button>
+    </div>
+  
+    <div>
+      <button class="button-ex" (click)="signOut()">Sign Out</button>
+    </div>
+  </form>
+  

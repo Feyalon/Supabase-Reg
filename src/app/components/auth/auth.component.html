@@ -1,0 +1,25 @@
+<div class="auth-component">
+    <div class="Headingpage" aria-live="polite">
+      <h1 class="heading">Sign in via magic link with your email below</h1>
+      <form [formGroup]="signInForm" (ngSubmit)="onSubmit()" class="form-widget">
+        <div>
+          <input
+            id="email"
+            formControlName="email"
+            class="inputField"
+            type="email"
+            placeholder="Your email"
+          />
+        </div>
+        <div>
+          <button
+            type="submit"
+            class="button block"
+            [disabled]="loading"
+          >
+            {{ loading ? 'Loading' : 'Send magic link' }}
+          </button>
+        </div>
+      </form>
+    </div>
+</div>

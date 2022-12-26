@@ -1,0 +1,81 @@
+.form-widget{
+    position: absolute;
+
+    left: 10%;
+    width: 500px;
+    height: 600px;
+    border: 1px solid rgb(90, 90, 90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 500ms linear;
+}
+.form-widget:hover{
+    animation: form-widgeta infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+@keyframes form-widgeta {
+    0%{
+        border: 1px solid greenyellow;
+    }
+    50%{
+        border: 1px solid red;
+    }
+    100%{
+        border: 1px solid cadetblue;
+    }
+}
+button{
+    background-color: black;
+    margin-top: 10%;
+    border: 1px solid gray;
+    width: 250px;
+    height: 35px;
+    cursor: pointer;
+    transition: 500ms linear ;
+}
+.button-ex:hover{
+    border: 1px solid red;
+    color: red;
+}
+button:hover{
+    border: 1px solid cadetblue;
+    color: cadetblue;
+}
+
+p{
+    margin-top: 5%;
+}
+input{
+    background-color: black;
+    margin-top: 5%;
+    border: 1px solid gray;
+    width: 250px;
+    height: 25px;
+    outline: none;
+    transition: 500ms linear ;
+}
+input:focus{
+    border: 1px solid greenyellow;
+    color: greenyellow;
+}
+textarea{
+    background-color: black;
+    margin-top: 5%;
+    border: 1px solid gray;
+    width: 250px;
+    height: 45px;
+    outline: none;
+    transition: 500ms linear ;
+    resize: none;
+}
+textarea:focus{
+    border: 1px solid greenyellow;
+    color: greenyellow;
+}
+.profilephoto{
+    border-radius: 100%;
+
+}
